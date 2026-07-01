@@ -6,13 +6,14 @@ import {
   FileText,
   BarChart3,
   Settings,
-  Computer
+  Computer,
 } from "lucide-react";
+
+import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
     <div className="sidebar">
-
       <div className="logo">
         <Computer size={34} color="#ff4f4f" />
 
@@ -23,49 +24,96 @@ function Sidebar() {
       </div>
 
       <ul className="menu">
-
-        <li className="active">
-          <LayoutDashboard size={20} />
-          <span>Dashboard</span>
+        <li>
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              isActive ? "menu-link active" : "menu-link"
+            }
+          >
+            <LayoutDashboard size={20} />
+            <span>Dashboard</span>
+          </NavLink>
         </li>
 
         <li>
-          <Monitor size={20} />
-          <span>All PCs</span>
+          <NavLink
+            to="/all-pcs"
+            className={({ isActive }) =>
+              isActive ? "menu-link active" : "menu-link"
+            }
+          >
+            <Monitor size={20} />
+            <span>All PCs</span>
+          </NavLink>
         </li>
 
         <li>
-          <TriangleAlert size={20} />
-          <span>Alerts</span>
+          <NavLink
+            to="/alerts"
+            className={({ isActive }) =>
+              isActive ? "menu-link active" : "menu-link"
+            }
+          >
+            <TriangleAlert size={20} />
+            <span>Alerts</span>
+          </NavLink>
         </li>
 
         <li>
-          <Activity size={20} />
-          <span>Predictive Maintenance</span>
+          <NavLink
+            to="/predictive-maintenance"
+            className={({ isActive }) =>
+              isActive ? "menu-link active" : "menu-link"
+            }
+          >
+            <Activity size={20} />
+            <span>Predictive Maintenance</span>
+          </NavLink>
         </li>
 
         <li>
-          <FileText size={20} />
-          <span>Reports</span>
+          <NavLink
+            to="/reports"
+            className={({ isActive }) =>
+              isActive ? "menu-link active" : "menu-link"
+            }
+          >
+            <FileText size={20} />
+            <span>Reports</span>
+          </NavLink>
         </li>
 
         <li>
-          <BarChart3 size={20} />
-          <span>Analytics</span>
+          <NavLink
+            to="/analytics"
+            className={({ isActive }) =>
+              isActive ? "menu-link active" : "menu-link"
+            }
+          >
+            <BarChart3 size={20} />
+            <span>Analytics</span>
+          </NavLink>
         </li>
 
         <li>
-          <Settings size={20} />
-          <span>Settings</span>
+          <NavLink
+            to="/settings"
+            className={({ isActive }) =>
+              isActive ? "menu-link active" : "menu-link"
+            }
+          >
+            <Settings size={20} />
+            <span>Settings</span>
+          </NavLink>
         </li>
-
       </ul>
 
       <div className="sidebar-footer">
         <p>Last Updated</p>
         <span>26 Jun 2026</span>
       </div>
-
     </div>
   );
 }
