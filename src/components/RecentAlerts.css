@@ -1,0 +1,35 @@
+.recent-alerts-card{
+   background:#111C35;
+border-radius:16px;
+padding:18px;
+border:1px solid rgba(255,255,255,.08);
+box-shadow:0 8px 24px rgba(0,0,0,.25);
+}
+
+.recent-alerts-card table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.recent-alerts-card th,
+.recent-alerts-card td{
+    padding:12px;
+    text-align:left;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.critical{
+    color:#F94144;
+    font-weight:bold;
+}
+
+.warning{
+    color:#F8961E;
+    font-weight:bold;
+}
+
+.info{
+    color:#277DA1;
+    font-weight:bold;
+}

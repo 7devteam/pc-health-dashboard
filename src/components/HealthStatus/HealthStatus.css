@@ -1,0 +1,142 @@
+.health-card{
+
+   background:#111C35;
+border-radius:16px;
+padding:18px;
+border:1px solid rgba(255,255,255,.08);
+box-shadow:0 8px 24px rgba(0,0,0,.25);
+
+}
+
+.health-card h2{
+    text-align:left;
+    margin-bottom:20px;
+}
+
+/* .health-body{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+} */
+
+.health-body{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.donut-placeholder{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    border:12px solid #2E4D8A;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* .legend{
+
+    flex:1;
+
+} */
+
+.legend{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    flex:1;
+
+}
+
+.legend-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:16px;
+
+}
+
+.legend-label{
+
+    width:80px;
+
+    font-weight:500;
+
+}
+
+.legend-value{
+
+    width:35px;
+
+    text-align:right;
+
+    font-weight:600;
+
+}
+
+.legend-percent{
+
+    width:55px;
+
+    text-align:right;
+
+    color:#9CA8C4;
+
+}
+
+.dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+}
+
+.healthy{
+
+    background:#299E47;
+
+}
+
+.warning{
+
+    background:#F8961E;
+
+}
+
+.critical{
+
+    background:#F94144;
+
+}
