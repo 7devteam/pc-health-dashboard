@@ -1,5 +1,5 @@
 import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
+// import Topbar from "../components/Topbar";
 
 import SummaryCards from "../components/AllPCs/SummaryCards";
 import FilterBar from "../components/AllPCs/FilterBar";
@@ -12,7 +12,7 @@ function AllPCs() {
       <Sidebar />
 
       <div className="content">
-        <Topbar />
+        {/* <Topbar /> */}
 
         <SummaryCards />
 

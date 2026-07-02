@@ -10,6 +10,7 @@ function FilterBar() {
   return (
     <div className="filter-bar">
 
+    <div className="filter-left">
       {/* Search */}
       <div className="search-box">
         <Search size={18} />
@@ -21,26 +22,104 @@ function FilterBar() {
 
       {/* Filters */}
 
-      <select>
-        <option>Department</option>
-      </select>
+      <div className="filter-group">
 
-      <select>
-        <option>Location</option>
-      </select>
+    <label>Department</label>
 
-      <select>
-        <option>Operating System</option>
-      </select>
+    <select>
 
-      <select>
-        <option>Health Status</option>
-      </select>
+        <option value="">
+            All Departments
+        </option>
 
-      <select>
-        <option>Vendor</option>
-      </select>
+        <option>IT</option>
 
+        <option>Finance</option>
+
+        <option>HR</option>
+
+    </select>
+
+</div>
+
+      <div className="filter-group">
+
+    <label>Location</label>
+
+    <select>
+
+        <option value="">
+            All Location
+        </option>
+
+        <option>Bengaluru</option>
+
+        <option>Chennai</option>
+
+        <option>Delhi</option>
+
+    </select>
+
+</div>
+
+      <div className="filter-group">
+
+    <label>Operating System</label>
+
+    <select>
+
+        <option value="">
+            All OS
+        </option>
+
+        <option>Windows</option>
+
+        <option>Linux</option>
+
+        <option>Andriod</option>
+
+    </select>
+
+</div>
+<div className="filter-group">
+
+    <label>Health Status</label>
+
+    <select>
+
+        <option value="">
+           Healthy
+        </option>
+
+        <option>Warning</option>
+
+        <option>Critical</option>
+
+        {/* <option>HR</option> */}
+
+    </select>
+
+</div>
+
+      <div className="filter-group">
+
+    <label>Vendor</label>
+
+    <select>
+
+        <option value="">
+           Dell
+        </option>
+
+        <option>HP</option>
+
+        <option>Lenovo</option>
+
+        {/* <option>HR</option> */}
+
+    </select>
+ </div>
+</div>
       {/* Actions */}
 
       <div className="toolbar-actions">
@@ -64,8 +143,9 @@ function FilterBar() {
           <SlidersHorizontal size={17} />
           Filters
         </button>
+</div>
+     
 
-      </div>
 
     </div>
   );

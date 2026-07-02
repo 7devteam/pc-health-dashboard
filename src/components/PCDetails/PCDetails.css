@@ -1,0 +1,6 @@
+.dashboard-main {
+  flex: 1;
+  padding: 24px;
+  background: #0f172a;
+  min-height: 100vh;
+}

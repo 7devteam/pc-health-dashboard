@@ -51,13 +51,13 @@ function Sidebar() {
 
         <li>
           <NavLink
-            to="/alerts"
+            to="/pc-details"
             className={({ isActive }) =>
               isActive ? "menu-link active" : "menu-link"
             }
           >
             <TriangleAlert size={20} />
-            <span>Alerts</span>
+            <span>PC Details</span>
           </NavLink>
         </li>
 
